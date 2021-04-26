@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+.back
+{
+    width: 100%;
+    height: 100vh;
+    position:  relative;
+    background-image: url(Image/background.jpg);
+     background-size: cover;
+     background-position: center;
+     overflow: hidden;
+
+}
+.ocean
+{
+    /* border: 2px solid black; */
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+     width: 100%;
+}
+.water
+{
+    height: 100%;
+    position: absolute;
+    right: 0;
+   
+    animation: jol 10s linear infinite;
+
+
+}
+.boat
+{
+    /* border: 2px solid black; */
+    width: 350px;
+    position: absolute;
+    bottom: 182px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.boat img
+{
+  width: 100%;  
+  /* -webkit-box-reflect: below 0 linear-gra dient (rgba(255, 255, 255,0.1),rgba(225, 225, 225,0.6)); */
+  /* -webkit-box-reflect: below 0 linear (rgba(255,255,255,0.1),rgba(255,255,255,0.6); */
+ animation: boat 2s linear infinite;
+ 
+}
+.magh
+{
+    height: 250px;
+    position: absolute;
+    right: 0;
+    animation: magh 40s linear infinite;
+
+}
+@keyframes magh 
+{
+
+    0%
+{
+    transform: translateX(0);
+    
+
+}
+    100%
+{
+    transform: translateX(500px);
+
+
+}
+}
+
+@keyframes jol
+{
+    0%
+    {
+        transform: translateX(0);
+
+    }
+    
+    100%
+    {
+        transform: translateX(900px);
+
+    }
+
+}
+
+@keyframes boat{
+0%
+{
+    transform: rotate(0deg) translateY(0);
+}
+25%
+{
+    transform: rotate(-1deg) translateY(-3px);
+}
+50%
+{
+    transform: rotate(0deg) translateY(-5px);
+}
+75%
+{
+    transform: rotate(1deg) translateY(-3px
+    );
+}
+100%
+{
+    transform: rotate(0deg) translateY(0);
+}
+
+}
