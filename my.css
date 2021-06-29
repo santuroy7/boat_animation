@@ -44,8 +44,6 @@
 .boat img
 {
   width: 100%;  
-  /* -webkit-box-reflect: below 0 linear-gra dient (rgba(255, 255, 255,0.1),rgba(225, 225, 225,0.6)); */
-  /* -webkit-box-reflect: below 0 linear (rgba(255,255,255,0.1),rgba(255,255,255,0.6); */
  animation: boat 2s linear infinite;
  
 }
